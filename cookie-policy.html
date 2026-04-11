@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cookie Policy | Evolvity Solutions</title>
+  <meta name="description" content="Cookie Policy for Evolvity Solutions, LLC — how we use cookies and similar technologies on our website." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.evolvity.com/cookie-policy.html" />
+  <link rel="icon" type="image/gif" href="images/evol_logo.gif" />
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .policy-nav {
+      position: sticky; top: 0; z-index: 1000;
+      background: rgba(12,31,58,0.98);
+      backdrop-filter: blur(20px);
+      border-bottom: 2px solid rgba(247,148,29,0.50);
+      box-shadow: 0 4px 32px rgba(0,0,0,0.25);
+      height: 72px; display: flex; align-items: center;
+    }
+    .policy-logo-pill {
+      background: #fff; border-radius: 8px;
+      padding: 4px 10px; display: inline-flex;
+      align-items: center; line-height: 0;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.20);
+    }
+    .policy-nav__inner {
+      max-width: 1200px; margin: 0 auto; padding: 0 1.5rem;
+      display: flex; align-items: center; justify-content: space-between; width: 100%;
+    }
+    .policy-back {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 0.875rem; font-weight: 600;
+      color: rgba(255,255,255,0.80); transition: color 0.2s;
+    }
+    .policy-back:hover { color: #fff; }
+    .policy-back svg { width:16px; height:16px; }
+    .policy-hero {
+      background: linear-gradient(140deg, #0D2438 0%, #162F48 60%, #0D3340 100%);
+      padding: 5rem 1.5rem 4rem; text-align: center;
+    }
+    .policy-hero__eyebrow {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 0.75rem; font-weight: 600; letter-spacing: 0.12em;
+      text-transform: uppercase; color: #00B5AF; margin-bottom: 1rem;
+    }
+    .policy-hero__eyebrow::before {
+      content: ''; width: 24px; height: 2px;
+      background: #00B5AF; border-radius: 999px;
+    }
+    .policy-hero__title {
+      font-family: 'Manrope', sans-serif;
+      font-size: clamp(2rem, 5vw, 3rem); font-weight: 800;
+      line-height: 1.15; letter-spacing: -0.02em;
+      color: #fff; margin-bottom: 1rem;
+    }
+    .policy-hero__meta { font-size: 0.875rem; color: rgba(255,255,255,0.50); }
+    .policy-body {
+      max-width: 820px; margin: 0 auto; padding: 4rem 1.5rem 5rem;
+    }
+    .policy-body h2 {
+      font-family: 'Manrope', sans-serif; font-size: 1.375rem; font-weight: 700;
+      color: #0D2438; margin: 2.5rem 0 0.75rem;
+      padding-bottom: 0.5rem; border-bottom: 2px solid #D9EEEC;
+    }
+    .policy-body h3 {
+      font-family: 'Manrope', sans-serif; font-size: 1.05rem; font-weight: 700;
+      color: #0D2438; margin: 1.75rem 0 0.5rem;
+    }
+    .policy-body p { font-size: 0.9375rem; line-height: 1.8; color: #4A6572; margin-bottom: 1rem; }
+    .policy-body ul { list-style: disc; padding-left: 1.5rem; margin-bottom: 1rem; }
+    .policy-body ul li { font-size: 0.9375rem; line-height: 1.8; color: #4A6572; margin-bottom: 0.4rem; }
+    .policy-body a { color: #009B96; }
+    .policy-body a:hover { color: #007A75; text-decoration: underline; }
+    .policy-callout {
+      background: #F2FAFA; border: 1px solid #D9EEEC;
+      border-left: 4px solid #009B96;
+      border-radius: 0 12px 12px 0;
+      padding: 1.25rem 1.5rem; margin: 1.5rem 0;
+      font-size: 0.9375rem; line-height: 1.75; color: #4A6572;
+    }
+
+    /* Cookie type table */
+    .cookie-table {
+      width: 100%; border-collapse: collapse; margin: 1.5rem 0;
+      font-size: 0.875rem;
+    }
+    .cookie-table thead tr {
+      background: #0D2438; color: #fff;
+    }
+    .cookie-table thead th {
+      padding: 0.75rem 1rem; text-align: left;
+      font-family: 'Manrope', sans-serif; font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+    .cookie-table tbody tr:nth-child(even) { background: #F2FAFA; }
+    .cookie-table tbody tr:hover { background: #E6F5F4; }
+    .cookie-table td {
+      padding: 0.75rem 1rem; border-bottom: 1px solid #D9EEEC;
+      color: #4A6572; line-height: 1.6;
+    }
+    .cookie-badge {
+      display: inline-block; padding: 2px 10px;
+      border-radius: 999px; font-size: 0.75rem; font-weight: 600;
+    }
+    .cookie-badge--essential  { background: rgba(0,155,150,0.12); color: #007A75; border: 1px solid rgba(0,155,150,0.25); }
+    .cookie-badge--analytics  { background: rgba(247,148,29,0.12); color: #c06800; border: 1px solid rgba(247,148,29,0.30); }
+    .cookie-badge--functional { background: rgba(11,31,80,0.08);  color: #0B1F50; border: 1px solid rgba(11,31,80,0.15); }
+
+    .policy-contact-box {
+      background: #0D2438; border-radius: 16px; padding: 2rem; margin-top: 3rem;
+    }
+    .policy-contact-box h3 { color: #fff !important; margin-top: 0 !important; }
+    .policy-contact-box p, .policy-contact-box a { color: rgba(255,255,255,0.65) !important; }
+    .policy-contact-box a:hover { color: #00B5AF !important; }
+    .policy-footer {
+      background: #060F1A; border-top: 1px solid rgba(0,155,150,0.12);
+      padding: 1.5rem; text-align: center;
+      font-size: 0.75rem; color: rgba(255,255,255,0.30);
+    }
+    .policy-footer a { color: rgba(255,255,255,0.40); margin: 0 0.75rem; }
+    .policy-footer a:hover { color: #fff; }
+  </style>
+</head>
+<body style="background:#fff;">
+
+  <nav class="policy-nav" aria-label="Site navigation">
+    <div class="policy-nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="Evolvity Solutions Home">
+        <div class="policy-logo-pill">
+          <img src="images/evol_logo.gif" alt="Evolvity Solutions"
+               style="height:40px; width:auto;" />
+        </div>
+      </a>
+      <a href="index.html" class="policy-back">
+        <svg fill="none" viewBox="0 0 16 16" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M10 12L6 8l4-4"/>
+        </svg>
+        Back to Home
+      </a>
+    </div>
+  </nav>
+
+  <div class="policy-hero">
+    <div class="policy-hero__eyebrow">Legal</div>
+    <h1 class="policy-hero__title">Cookie Policy</h1>
+    <p class="policy-hero__meta">Effective Date: January 1, 2024 &nbsp;|&nbsp; Last Updated: January 1, 2025</p>
+  </div>
+
+  <main class="policy-body">
+
+    <div class="policy-callout">
+      <strong>In plain English:</strong> We use a small number of cookies to make our website
+      function correctly and to understand how visitors use it. We do not use advertising
+      or tracking cookies. You can control cookie preferences through your browser settings.
+    </div>
+
+    <h2>1. What Are Cookies?</h2>
+    <p>
+      Cookies are small text files placed on your device (computer, tablet, or mobile)
+      when you visit a website. They allow the website to recognize your browser, remember
+      your preferences, and collect information about your visit to improve your experience.
+    </p>
+    <p>
+      Similar technologies include web beacons (tiny images embedded in pages), local
+      storage, and session storage. This policy covers all such technologies collectively
+      referred to as "cookies."
+    </p>
+
+    <h2>2. How We Use Cookies</h2>
+    <p>
+      Evolvity Solutions uses cookies on <a href="https://www.evolvity.com">www.evolvity.com</a>
+      for the following purposes:
+    </p>
+    <ul>
+      <li>To ensure our website functions correctly and securely.</li>
+      <li>To remember your preferences during a browsing session.</li>
+      <li>To analyze how visitors use our Site so we can improve the experience.</li>
+      <li>To measure the effectiveness of our content.</li>
+    </ul>
+    <p>
+      We do <strong>not</strong> use cookies for behavioral advertising, cross-site tracking,
+      or the sale of your browsing data.
+    </p>
+
+    <h2>3. Types of Cookies We Use</h2>
+
+    <table class="cookie-table" role="table" aria-label="Cookie types used by Evolvity Solutions">
+      <thead>
+        <tr>
+          <th scope="col">Cookie Name / Category</th>
+          <th scope="col">Type</th>
+          <th scope="col">Purpose</th>
+          <th scope="col">Duration</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Session state</strong></td>
+          <td><span class="cookie-badge cookie-badge--essential">Essential</span></td>
+          <td>Maintains basic website functionality and security during your visit.</td>
+          <td>Session (deleted when browser closes)</td>
+        </tr>
+        <tr>
+          <td><strong>CSRF protection token</strong></td>
+          <td><span class="cookie-badge cookie-badge--essential">Essential</span></td>
+          <td>Protects form submissions from cross-site request forgery attacks.</td>
+          <td>Session</td>
+        </tr>
+        <tr>
+          <td><strong>Google Analytics (_ga, _gid)</strong></td>
+          <td><span class="cookie-badge cookie-badge--analytics">Analytics</span></td>
+          <td>Collects anonymized data on page views, session duration, and traffic sources to help us improve content and navigation. IP addresses are anonymized.</td>
+          <td>_ga: 2 years; _gid: 24 hours</td>
+        </tr>
+        <tr>
+          <td><strong>User preference</strong></td>
+          <td><span class="cookie-badge cookie-badge--functional">Functional</span></td>
+          <td>Remembers settings such as language or display preferences between visits.</td>
+          <td>1 year</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>4. Essential Cookies</h2>
+    <p>
+      Essential cookies are strictly necessary for our website to operate. They enable core
+      functions such as page navigation, form submission security, and load balancing.
+      Without these cookies, the website cannot function properly. Because they are required
+      for the Site to work, essential cookies cannot be disabled through our cookie controls.
+    </p>
+
+    <h2>5. Analytics Cookies</h2>
+    <p>
+      We use Google Analytics to understand how visitors interact with our Site—which pages
+      are visited, how long visitors stay, and how they navigate between sections. This data
+      is aggregated and anonymized; it cannot be used to identify you personally.
+    </p>
+    <p>
+      You can opt out of Google Analytics tracking at any time by installing the
+      <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer">
+        Google Analytics Opt-out Browser Add-on</a>.
+    </p>
+
+    <h2>6. Third-Party Cookies</h2>
+    <p>
+      Some pages on our Site may include embedded content or links from third-party services
+      (for example, LinkedIn, YouTube, or social sharing buttons). These third parties may
+      place their own cookies on your device. We do not control these cookies and recommend
+      reviewing the relevant third-party privacy and cookie policies.
+    </p>
+
+    <h2>7. Managing Your Cookie Preferences</h2>
+
+    <h3>7.1 Browser Settings</h3>
+    <p>
+      You can control and delete cookies through your browser settings. Most browsers allow
+      you to block or delete cookies, and to be notified before a cookie is placed. Please
+      note that disabling certain cookies may affect the functionality of our Site.
+    </p>
+    <p>Browser-specific instructions:</p>
+    <ul>
+      <li><a href="https://support.google.com/chrome/answer/95647" target="_blank" rel="noopener noreferrer">Google Chrome</a></li>
+      <li><a href="https://support.mozilla.org/en-US/kb/cookies-information-websites-store-on-your-computer" target="_blank" rel="noopener noreferrer">Mozilla Firefox</a></li>
+      <li><a href="https://support.apple.com/guide/safari/manage-cookies-sfri11471/" target="_blank" rel="noopener noreferrer">Apple Safari</a></li>
+      <li><a href="https://support.microsoft.com/en-us/windows/manage-cookies-in-microsoft-edge-168dab11-0753-043d-7c16-ede5947fc64d" target="_blank" rel="noopener noreferrer">Microsoft Edge</a></li>
+    </ul>
+
+    <h3>7.2 Do Not Track</h3>
+    <p>
+      Some browsers offer a "Do Not Track" (DNT) signal. Our Site currently does not alter
+      its behavior based on DNT signals, though we limit our data collection to the minimal
+      set described in this policy. We will update this policy if our practices change.
+    </p>
+
+    <h2>8. Consent</h2>
+    <p>
+      By continuing to use our Site without changing your browser's cookie settings, you
+      consent to our use of cookies as described in this policy. You may withdraw your
+      consent at any time by adjusting your browser settings or opting out of analytics
+      as described in Section 5.
+    </p>
+    <p>
+      If you are located in the European Economic Area (EEA) or United Kingdom, we will
+      seek your explicit consent before placing non-essential cookies, in compliance with
+      the General Data Protection Regulation (GDPR) and the UK Privacy and Electronic
+      Communications Regulations (PECR).
+    </p>
+
+    <h2>9. Data Collected via Cookies</h2>
+    <p>
+      Data collected via analytics cookies may include:
+    </p>
+    <ul>
+      <li>Pages visited and time spent on each page.</li>
+      <li>Referring website (how you arrived at our Site).</li>
+      <li>Browser type, version, and operating system.</li>
+      <li>Device type (desktop, tablet, mobile).</li>
+      <li>General geographic location (country/region — not precise location).</li>
+      <li>Interactions such as clicks and scroll depth.</li>
+    </ul>
+    <p>
+      This data is never linked to any personally identifiable information and is
+      processed in accordance with our <a href="privacy-policy.html">Privacy Policy</a>.
+    </p>
+
+    <h2>10. Updates to This Cookie Policy</h2>
+    <p>
+      We may update this Cookie Policy periodically to reflect changes in our use of
+      cookies or applicable law. Changes will be posted on this page with an updated
+      effective date. We encourage you to review this policy periodically.
+    </p>
+
+    <h2>11. Contact Us</h2>
+    <div class="policy-contact-box">
+      <h3>Cookie &amp; Privacy Questions</h3>
+      <p>
+        If you have questions about our use of cookies or wish to exercise your rights
+        under applicable data protection laws, please contact us:
+      </p>
+      <p>
+        <strong style="color:#fff;">Evolvity Solutions, LLC</strong><br />
+        425 Westpark Way, Ste #100<br />
+        Euless, TX 76040<br />
+        Phone: <a href="tel:+19722000725">972-200-0725</a><br />
+        Email: <a href="mailto:privacy@evolvity.com">privacy@evolvity.com</a>
+      </p>
+    </div>
+
+  </main>
+
+  <footer class="policy-footer">
+    <div>© 2006 – <script>document.write(new Date().getFullYear())</script> Evolvity Solutions, LLC. All rights reserved.</div>
+    <div style="margin-top:0.5rem;">
+      <a href="index.html">Home</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms-of-service.html">Terms of Service</a>
+      <a href="cookie-policy.html">Cookie Policy</a>
+    </div>
+  </footer>
+
+</body>
+</html>
