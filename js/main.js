@@ -11,13 +11,16 @@
      1. Navigation scroll state
   ------------------------------------------------------- */
   const nav = document.getElementById('main-nav');
+  const sloganBanner = document.querySelector('.slogan-banner');
 
   function handleNavScroll() {
     if (!nav) return;
     if (window.scrollY > 24) {
       nav.classList.add('nav--scrolled');
+      if (sloganBanner) sloganBanner.classList.add('slogan-banner--scrolled');
     } else {
       nav.classList.remove('nav--scrolled');
+      if (sloganBanner) sloganBanner.classList.remove('slogan-banner--scrolled');
     }
   }
 
