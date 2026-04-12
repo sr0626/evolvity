@@ -526,7 +526,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space-16);
-  align-items: center;
+  align-items: start;
   box-sizing: border-box;
 }
 
@@ -575,6 +575,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   letter-spacing: -0.03em;
   color: var(--white);
   margin-bottom: var(--space-6);
+  overflow-wrap: break-word;
+  word-break: break-word;
   /* Fixed height prevents scroll-jump when typed text changes length */
   min-height: calc(1.08em * 3);
 }
@@ -594,8 +596,9 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   font-size: var(--text-lg);
   line-height: 1.80;
   color: var(--text-inv-dim);
-  max-width: 490px;
+  max-width: 100%;
   margin-bottom: var(--space-10);
+  text-align: left;
 }
 
 .hero__actions {
@@ -625,7 +628,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: stretch;
+  align-items: flex-end;
   justify-content: center;
   min-width: 0;
   overflow: hidden;
