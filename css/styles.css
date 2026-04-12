@@ -1406,7 +1406,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .hero__description    { margin: 0 auto var(--space-8); }
   .hero__actions        { justify-content: center; }
   .hero__stats          { justify-content: center; }
-  .hero__visual         { display: none; }
+  .hero__visual         { display: flex; }
+  .hero__visual-card    { width: 100%; max-width: 480px; margin: 0 auto; }
   .ai-solutions-grid    { grid-template-columns: 1fr; }
   .ai-visual-panel      { display: none; }
   .approach-steps       { grid-template-columns: repeat(3, 1fr); }
@@ -1426,6 +1427,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .footer__grid   { grid-template-columns: 1fr; gap: var(--space-8); }
   .footer__bottom { flex-direction: column; align-items: flex-start; }
   .approach-steps { grid-template-columns: 1fr 1fr; }
+  .slogan-banner__text { white-space: normal; font-size: 0.72rem; }
+  .slogan-banner__line { display: none; }
 }
 
 @media (max-width: 480px) {
@@ -1433,6 +1436,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .industries-grid  { grid-template-columns: 1fr 1fr; }
   .contact-form     { padding: var(--space-6); }
   .approach-steps   { grid-template-columns: 1fr; }
+  .hero             { padding-top: calc(var(--nav-height) + 30px); }
 }
 
 /* ══════════════════════════════════════════════════════════════════════════
